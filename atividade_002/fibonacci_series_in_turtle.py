@@ -53,7 +53,7 @@ def fibo_plot(int_number):
 
     # Fibonacci Spiral Plot
     x.left(90)
-    for i in range(number_iterations):
+    for i in range(n_iterations):
         print(b)
         fibo_equation = math.pi * b * factor / 2
         fibo_equation /= 90
@@ -72,15 +72,15 @@ factor = 1
 
 # Taking Input for the number of
 # Iterations our Algorithm will run
-number_iterations = int(input('Enter the number of iterations (must be > 1): '))
+n_iterations = int(input('Enter the number of iterations (must be > 1): '))
 
 # Plotting the Fibonacci Spiral Fractal
 # and printing the corresponding Fibonacci Number
-if number_iterations > 0:
-    print("Fibonacci series for", number_iterations, "elements :")
+if n_iterations > 0:
+    print("Fibonacci series for", n_iterations, "elements :")
     x = turtle.Turtle()
     x.speed(100)
-    fibo_plot(number_iterations)
+    fibo_plot(n_iterations)
     turtle.done()
 
 else:
